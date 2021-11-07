@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <base href="http://conjuntoinstrucoes.epizy.com">
+        <title>Conjunto de Instruções</title>
+        <meta('Content-Type: application/json; charset=utf-8');> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" type="text/css" href="http://mobiletest.me/libs/css/foundation-essentials-5.5.1/css/normalize.302.min.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen">-->
+        <meta name="author"               content="Desenvolvido por Tiago José Zangerolami, https://br.linkedin.com/in/tiago-front-end-web">
+        <meta name="keywords"             content="conjunto de instrucoes, arquitetura de computadores, instituto federal, iffarroupilha, iff, IFFar SA" />
+        <meta name="rights"               content="Tiago José Zangerolami"/>
+        <meta name="description"          content="Introdução à Arquiteura de Computadores, Conjunto de instruções, Superior em Licenciatura em Computação, IFFar SA" />
+        <!-- Botao Share Facebook -->
+        <meta property="og:url"           content="http://conjuntoinstrucoes.epizy.com" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Tiago José Zangerolami" />
+        <meta property="og:description"   content="Superior em Licenciatura em Computação, IFFar SA" />
+        <meta property="og:image"         content="images/conjuntoinstrucoes.jpg" />
+
+        <link href="favicon.ico" rel="shortcut icon">
+
+        <!-- SOCIAL ICONS button bootstraps -->
+         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/buttonsocial.css"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+        <!-- button jumbotron bootstraps -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+        
+        <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
+        
+        <!-- esxonde navbar e button para cima -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      
+    </head>
+
+    <body>
+        <!-- Esconde Navbar -->
+        <script>
+           $(window).scroll(function() {
+            if ($(this).scrollTop()>200)
+            {
+                $('.navbar').fadeOut();
+            }
+             else
+              {
+                 $('.navbar').fadeIn();
+              }
+            });
+        </script>
+        <!-- END Esconde Navbar -->
+        
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                 <a class="navbar-brand" href="#"></a>
+                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="my-1 mx-2 close">X</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width:0.8em;" src="images/iffarsa.png"/> IFFar SA</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" title="Portal do Aluno IFF Santo Augusto" href="https://www.iffarroupilha.edu.br/portal-aluno"><img style="width:0.8em;" src="images/iffarsa.png"/> Portal do Aluno</a>
+                             <a class="dropdown-item" target="_blank" title="Sistema Integrado de Gestão de Atividades Acadêmicas" href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"><img style="width:0.8em;" src="images/iffarsa.png"/> Sistema SIGAA</a>
+                        </div>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-sitemap"></i> Arquitetura Computadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="instrucoes.html"><i class="fa fa-1x fas fa-sitemap"></i> Introdução > Ciclo Instruções</a>
+                            <a class="dropdown-item" target="_blank" href="http://conjuntoinstrucoes.epizy.com/linguagens.html"><i class="fa fa-1x fas fa-sitemap"></i> Linguagens > Conversões</a>
+                            <!--<a class="dropdown-item" target="_blank" href="instrucoes03.html"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções - terceira parte</a>-->
+                            <a class="dropdown-item" target="_blank" href="matrix.html"><i class="fa fa-1x fas fa-laptop"></i> Efeito Matrix 0101010</a>
+                        </div>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="http://conjuntoinstrucoes.epizy.com/?i=1#"><i class="fa fa-1x fas fa-home"></i> Quiz<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+        <main role="main">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">
+                        Arquitetura de Computadores</br>
+                        <p class="display-4";>Conjunto de Instruções</p>
+                    </h1>
+                    <!-- \\\\\\\\\\\\\\ BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->
+                            <div style="padding-top:-4px;padding-right: 4px;padding-bottom: 4px;padding-left: 4px;;float:right;background-color: #fff;border-radius:0.8em;">      
+                                <script>
+                                    //Constrói a URL depois que o DOM estiver pronto
+                                    document.addEventListener("DOMContentLoaded", function() {
+                                        //conteúdo que será compartilhado: Título da página + URL
+                                        var conteudo = encodeURIComponent(document.title + " " + window.location.href);
+                                        //altera a URL do botão
+                                        document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+                                    }, false);
+                                 </script>
+                                <a href="" title="Compartilhar WhatsApp" id="whatsapp-share-btt" rel="nofollow" target="_blank"><img style="width:92px;height:20px;" class="whatsappbutton" src="images/botao-whatsapp.png"/></a>                            
+                            </div>
+                            <!-- \\\\\\\\\\\\\\ END BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->                    
+                </div>
+            </div>
+
+            <div class="container">
+                
+                <!-- Example row of columns -->
+                <div class="row">                      
+
+                    <div class="col" id="body">
+
+                                                 
+                        <h2>Quiz: Conjunto de Instruções <i class="fa fa-1x fas fa-book"></i></h2>        
+                           
+                            <!-- QUIZ -->
+                        <div id="slickQuiz">
+                            <!--<h1 class="quizName">
+                                 where the quiz name goes 
+                            </h1>-->
+
+                            <div class="quizArea">      
+                                                                                            
+                               <meta charset="utf-8" />
+                            <meta('Content-Type: application/json; charset=utf-8');>
+                            
+                                <div class="quizHeader">
+                                     <!-- where the quiz main copy goes -->
+                                    <a class="button startQuiz" href="#"><i class="fa fa-1x fas fa-flag-checkered"></i> Iniciar Quiz!</a>
+                                    
+                                    
+                                </div>
+                                <!-- where the quiz gets built -->
+                                
+                            </div>
+
+                                       
+                            <div class="quizResults">
+                                <h3 class="quizScore">
+                                    Você acertou: 
+                                    <span>
+                                        <!-- where the quiz score goes -->
+                                    </span>
+                                </h3>
+                                <h3 class="quizLevel">
+                                    <strong>Ranking:</strong> 
+                                    <span>
+                                        <!-- where the quiz ranking level goes -->
+                                    </span>
+                                </h3>
+                                <div class="quizResultsCopy">
+                                    <!-- where the quiz result copy goes -->
+                                </div>
+                                <ul style="margin-top:20px;">
+                                    <a class="button resetQuiz" onClick="history.go(0)" value="Atualizar" href="#"><i class="fa fa-1x fas fa-flag-checkered"></i> Reiniciar</a>
+                                </ul>
+                            </div>
+                          
+                        </div>
+                        <!-- FIM DO QUIZ -->
+                         
+                    </div>                    
+                 </div>
+                
+            </div>
+            <!-- fim container -->
+        </main>
+        <br>
+                       
+  
+      <!-- footer -->
+        <footer class="card-footer">
+           
+                <p style="float:right;text-align:centerdisplay: inline-block;line-height:200%;">Aluno <c style="font-size:1.5em;">👨‍💻</c> <a style="color:#000;" target="_blank" href="https://www.facebook.com/tiago.zangerolami"> Tiago José Zangerolami <i class="fa fa-1x fab fa-facebook-square"></i></a> <!-- e <a style="color:#000;" target="_blank" href="https://www.facebook.com/people/Rafa-Fragoso/100012343621106">Rafael Fragoso Rodrigues <i class="fa fa-1x fab fa-facebook-square"></i>--></a><br>Disciplina de Introdução à Arquitetura de Computadores, Professora Márcia Fink<br>Curso Superior de Licenciatura em Computação<br><a style="color:#000;" title="Site Iffar SA" target="_blank" href="https://www.iffarroupilha.edu.br/santo-augusto">&nbsp;IFFar&nbsp;<img style="width:1em;" src="images/iffarsa.png"/>&nbsp;Santo Augusto RS</a></p> 
+
+
+                 <p style="float:left;display: inline-block;"><i title="HTML5" class="fa fa-2x fab fa-html5"></i>&nbsp;&nbsp;<i title="CSS3" class="fa fa-2x fab fa-css3"></i>&nbsp;&nbsp;<img title="JavaScript" style="width:25px;" src="images/js.png"/>&nbsp;&nbsp;<a target="_blank" href="https://jquery.com/"><img title="JQuery" style="width:25px;" src="images/jquery.png"/></a>&nbsp;&nbsp;<a title="CSS3" target="_blank" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"><img title="Modelo Bootstrap" style="width:25px;" src="images/bootstrap.png"/></a> <a style="color:#000;" title="Modelo Quiz" target="_blank" href="https://github.com/QuickenLoans/SlickQuiz"><i class="fa fa-2x fab fa-github"></i></a>&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:78px;height:21px"src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a> <a target="_blank" href="https://infinityfree.net/"><img title="Hospedado em infinityfree" style="width:7rem;" src="images/infinityfree.png"/></a><br><a target="_blank" title="fontawesome" href="https://fontawesome.com/"><i class="fa fa-2x fab fa-font-awesome"></i></a> <a target="_blank" href="https://giphy.com/"><img title="Giphy" style=";width:6rem;" src="images/giphy.png"/></a> <a title="Leitor de Texto" target="_blank" href="https://responsivevoice.com/"><img style="width:7em;" src="images/responsivevoice.png"/></a>&nbsp;&nbsp;<a target="_blank" href="https://br.freepik.com/fotos-gratis/bonecas-em-uma-placa-mae-de-computador_999834.htm"><img style="width:6rem;" src="images/freepik.png"/></a><br><n style="font-size:10px;">Utilize navegadores:</n5>&nbsp;&nbsp;<img src="images/brownser_chome2.jpg" border="0" title="Chrome 2x.x ou superior">&nbsp;&nbsp;<img src="images/brownser_fire2.jpg" border="0" title="Firefox 2x.x ou superior">&nbsp;&nbsp;<img src="images/opera.png" border="0" title="Opera"><br><a title="Tiago José Zangerolami" target="_blank" style="color:#000;" href="https://br.linkedin.com/in/tiago-front-end-web"><y style="font-size:10px;vertical-align:middle;">Website&nbsp;<img src="images/responsive.png" border="0" title="Resposive Desing"/>&nbsp;By</y>&nbsp;<img style="width:2rem;border-radius:0.8em;" src="images/tiago.jpeg"/><img style="width:2rem;border-radius:0.8em;" src="images/www.tiago.png"/></a></p> 
+           
+        </footer>       
+       
+
+        <!-- rolar para cima -->
+        <script>
+            $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+            });
+            
+            function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+            }
+        </script>
+        <div class="smoothscroll-top">
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span>
+        </div>
+        <!-- fim rolar para cima -->
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Funcoes QUIZ -->
+        <script src="quiz/js/jquery.js"></script>
+        <script src="quiz/js/slickQuiz-config.js"></script>
+        <script src="quiz/js/slickQuiz.js"></script>
+        <script src="quiz/js/master.js"></script>
+    </body>
+
+    <!-- CHAVE PARA LEITURA DE TODA A PÁGINA AUTOMATICAMENTE -->
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=I40nFnxQ"></script>-->
+</html>

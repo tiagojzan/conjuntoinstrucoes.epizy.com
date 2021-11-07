@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta('Content-Type: application/json; charset=utf-8');> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" type="text/css" href="http://mobiletest.me/libs/css/foundation-essentials-5.5.1/css/normalize.302.min.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen">-->
+        <meta name="author"               content="Desenvolvido por Tiago José Zangerolami, https://br.linkedin.com/in/tiago-front-end-web">
+        <meta name="keywords"             content="conjunto de instrucoes, arquitetura de computadores, instituto federal, iffarroupilha, iff, IFFar SA" />
+        <meta name="rights"               content="Tiago José Zangerolami"/>
+        <meta name="description"          content="Introdução à Arquiteura de Computadores, Conjunto de instruções, Superior em Licenciatura em Computação, IFFar SA" />
+       
+        <!-- Botao Share Facebook -->
+        <meta property="og:url"           content="http://conjuntoinstrucoes.epizy.com/instrucoes02.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Tiago José Zangerolami, Rafael Fragoso Rodrigues e Renan Bester" />
+        <meta property="og:description"   content="Superior em Licenciatura em Computação, IFFar SA" />
+        <meta property="og:image"         content="images/conjuntoinstrucoes.jpg" />
+
+        <title>Conjunto de Instruções</title>
+
+        <link href="favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+
+        <!-- SOCIAL ICONS button bootstraps -->
+         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/buttonsocial.css"> 
+        
+        <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Esconde Navbar -->
+        <script type="text/javascript">
+            $(window).scroll(function() {
+             if ($(this).scrollTop()>200)
+              {
+                 $('.navbar').fadeOut();
+              }
+             else
+              {
+                 $('.navbar').fadeIn();
+              }
+            });
+        </script>
+        <!-- END Esconde Navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"></a>
+               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="my-1 mx-2 close">X</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav nav-fill w-100">
+                   
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width:0.8em;" src="images/iffarsa.png"/> IFFar SA</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" title="Portal do Aluno IFF Santo Augusto" href="https://www.iffarroupilha.edu.br/portal-aluno"><img style="width:0.8em;" src="images/iffarsa.png"/> Portal do Aluno</a>
+                             <a class="dropdown-item" target="_blank" title="Sistema Integrado de Gestão de Atividades Acadêmicas" href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"><img style="width:0.8em;" src="images/iffarsa.png"/> Sistema SIGAA</a>
+                             
+                        </div>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-sitemap"></i> Arquitetura Computadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="instrucoes.html"><i class="fa fa-1x fas fa-sitemap"></i> Introdução > Ciclo Instruções</a>
+                            <a class="dropdown-item" target="_blank" href="instrucoes02.html"><i class="fa fa-1x fas fa-sitemap"></i> Linguagens > Conversões</a>
+                            <a class="dropdown-item" target="_blank" href="instrucoes03.html"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções - terceira parte</a>
+                            <a class="dropdown-item" target="_blank" href="matrix.html"><i class="fa fa-1x fas fa-laptop"></i> Efeito Matrix 0101010</a>
+                        </div>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="http://conjuntoinstrucoes.epizy.com/?i=1#"><i class="fa fa-1x fas fa-home"></i> Quiz<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">
+                        Arquitetura de Computadores</br>
+                        <p class="display-4";>Conjunto de Instruções</p>
+                    </h1>
+
+                    <!-- \\\\\\\\\\\\\\ BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->
+                            <div style="padding-top:-4px;padding-right: 4px;padding-bottom: 4px;padding-left: 4px;;float:right;background-color: #fff;border-radius:0.8em;">     
+                               <!-- Load Facebook SDK for JavaScript -->
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)0;
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+
+                                <!-- Your share button code -->
+                                <div class="fb-share-button" 
+                                    data-href="http://conjuntoinstrucoes.epizy.com/instrucoes02.html" 
+                                    data-layout="button_count">
+                                </div> 
+                            </div>
+                            <!-- \\\\\\\\\\\\\\ END BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->
+                
+                </div>
+            </div>
+
+            <div class="container">
+            
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-8">    
+
+                        <h2>Resumo da matéria </h2>
+                        <h2>Conjunto de instruções 02 </h2>
+
+https://pt.wikipedia.org/wiki/Conjunto_de_instru%C3%A7%C3%B5es
+
+                            <p>Arquitetura do conjunto de instruções (instruction set architecture - ISA) se distingue da microarquitetura, que é o conjunto de técnicas de design de processadores usado ​​para implementar o conjunto de instruções. Computadores com diferentes microarquiteturas podem compartilhar um conjunto de instruções comum. Por exemplo, o Intel Pentium e o AMD Athlon implementam versões quase idênticas do conjunto de instruções x86, mas com diferentes projetos internos.</p>
+                            <p>O conceito de uma arquitetura distinta do projeto de uma máquina específica, foi desenvolvido por Fred Brooks na IBM durante a fase de projeto do System/360.</p>
+                         
+                            <h2><span></span><span  id="Classificação_dos_conjuntos_de_instruções">Classificação dos conjuntos de instruções</span></span>2"</span></h2>
+                            <p>Um conjunto de instruções complexo (Complex Instruction Set Computer&#160;- CISC) tem muitas instruções especializadas, algumas das quais raramente serão usadas ​em programas práticos.&#160;Um&#160;conjunto reduzido de instruções (Reduced Instruction Set Computer - RISC) simplifica o processador implementando somente as instruções que são frequentemente utilizadas;&#160;operações não usuais são implementadas como sub-rotinas, onde o tempo de execução extra é compensado pela sua utilização rara.&#160;Teoricamente tipos importantes são o&#160;Minimal Instruction Set Computer&#160;e o One Instruction Set Computer, mas estes não são implementados em processadores comerciais.&#160;Outra variação é o&#160;Very Long Instruction Word (VLIW) onde o processador recebe muitas instruções codificadas em uma única palavra de instrução.
+                            </p>
+                            <h2><span id="Linguagem_de_M.C3.A1quina"></span><span  id="Linguagem_de_Máquina">Linguagem de Máquina</span></span><3"  title="Editar secção: Linguagem de Máquina">editar</a>  </span>3" title="Editar secção: Linguagem de Máquina"></span></span></h2>
+                            <p>A linguagem de máquina é feita a partir de declarações ou instruções simples, é uma representação para instruções em um nível mais baixo. Todo programa é traduzido por uma linguagem de nível mais alto (como Java e C++) para a linguagem de máquina.</p>
+                            <p>Na arquitetura de processamento, uma determinada instrução pode especificar:</p>
+                            
+                            <ul><li>Registradores especiais para aritmética, endereçamento, ou funções de controle;</li>
+                            <li>Posições de memória específicas ou deslocamentos;</li>
+                            <li>Modos de endereçamento específico utilizado para interpretar os operandos;</li></ul>
+                            <p>Operações mais complexas são construídas combinando estas instruções simples, que são executadas sequencialmente, ou de outra forma, dirigidas por instruções de controle de fluxo.</p>
+                          
+                            <h3>Exemplos de operações primitivas</h3>
+                            <ul><li>Transferência de uma palavra de dados de uma célula para outra;</li>
+                            <li>Soma de dois operandos, guardando o resultado em um deles ou em um terceiro operando;</li>
+                            <li>Desvio para outro endereço fora da sequência;</li>
+                            <li>Teste de condição. Se o teste resultar em true(verdadeiro), desvia para outro endereço;</li>
+                            <li>Realizar operação lógica “AND” entre dois valores;</li>
+                            <li>Parar a execução de um programa;</li>
+                            <li>Transferência de byte da porta de E/S para a MP e vice-versa;</li>
+                            <li>Substituição do operando por seu valor absoluto.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span></span>3<span></span></a></sup></li></ul>
+                            <h3><span id="Partes_de_uma_instru.C3.A7.C3.A3o"></span><span  id="Partes_de_uma_instrução">Partes de uma instrução</span></span><5"  title="Editar secção: Partes de uma instrução">editar</a>  </span>5" title="Editar secção: Partes de uma instrução"></span></span></h3>
+                            <p>Em arquiteturas tradicionais, uma instrução inclui um&#160;código de operação&#160;que especifica a operação a ser executada, como <i>adicionar conteúdo da memória para um registrador</i>, tendo zero ou mais&#160;operandos&#160;especificados, que podem referenciar registradores, posições de memória ou dados literais.&#160;Os operandos especificados podem ter&#160;modos de endereçamento&#160;que determinam o seu significado.&#160;Existem arquiteturas com&#160;palavra de instrução muito longa(VLIW), que incluem muitos&#160;microcódigos, onde múltiplos opcodes e operandos são especificados em uma única instrução.
+                            </p><p>Alguns conjuntos de instruções não tem um campo de opcode (como&#160;Transport Triggered Architectures&#160;(TTA) ou a&#160;Forth virtual machine), só operando(s).&#160;Alguns conjuntos de instruções não têm nenhum campo de operando especificado, como algumas&#160;máquinas de pilha.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span></span>4<span></span></a></sup>
+                            </p>
+                            <h4><span  id="OPCODE"><a href="/wiki/Opcodes"  title="Opcodes">OPCODE</a></span></span><6"  title="Editar secção: OPCODE">editar</a>  </span>6" title="Editar secção: OPCODE"></span></span></h4>
+                            <p>Operation Code: indica ao processador o que fazer e como fazer(qual é a operação a ser executada), é o nome da instrução propriamente dito. Ele indica ao processador quais dados e onde a operação se realizará. Suas especificações e formatos são definidos no conjunto de instruções da arquitetura do processador em questão (que pode ser um processador geral ou uma unidade de tratamento mais especializado).<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span></span>5<span></span></a></sup>
+                            </p><p>O tamanho ou comprimento de uma instrução varia muito, de menos de quatro bits em alguns micro controladores a muitas centenas de bits em alguns sistemas VLIW. Processadores usados ​​em computadores pessoais, mainframes e supercomputadores têm tamanhos de instrução entre 8 e 64 bits. A mais longa instrução disponível no x86 é de 15 bytes (120 bits).<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span></span>6<span></span></a></sup>
+                            </p><p>Instruções RISC normalmente tem uma largura de instrução fixa (geralmente 4 bytes = 32 bits), enquanto que um conjunto típico de instruções CISC pode ter instruções de comprimento muito variável (1-15 bytes para x86). Instruções de largura fixa são menos complicadas de lidar do que instruções de largura variável, por várias razões (não precisa verificar se uma instrução atravessa uma linha de cache ou o limite virtual da página deb memória, por exemplo), e são, portanto, um pouco mais fácil de otimizar a velocidade.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span></span>7<span></span></a></sup>
+                            </p><p>As instruções que constituem um programa raramente são especificados usando a sua forma numérica (código de máquina), podem ser especificados por programadores que utilizam uma linguagem de montagem, ou, mais comumente, podem ser gerados por compiladores a partir de linguagens de programação.
+                            </p>
+                            <h5><span  id="Projeto">Projeto</span></span><7"  title="Editar secção: Projeto">editar</a>  </span>7" title="Editar secção: Projeto"></span></span></h5>
+                            <p>O projeto de conjuntos de instruções é uma questão complexa. Houve duas fases da história para o microprocessador. O primeiro foi o CISC (Complex Instruction Set Computer), que teve muitas instruções diferentes. Na década de 1970, no entanto, a IBM fez uma pesquisa e descobriu que muitas instruções poderiam ser eliminadas. O resultado foi o RISC (Reduced Instruction Set Computer), uma arquitetura que utiliza um conjunto menor de instruções. Um conjunto de instruções mais simples pode oferecer o potencial para velocidades mais elevadas, redução do tamanho do processador, e reduzido consumo de energia. No entanto, um conjunto mais complexo pode otimizar as operações comuns, melhorar a eficiência da memória/cache e simplificar a programação.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span></span>8<span></span></a></sup>
+                            </p>
+                            <h4><span  id="Operando">Operando</span></span><8"  title="Editar secção: Operando">editar</a>  </span>8" title="Editar secção: Operando"></span></span></h4>
+                            <p>É o dado que se deseja manipular.
+                            </p><p>Adicionalmente, em&#160;código de máquina, um&#160;<b>operando</b>&#160;é um valor (um argumento) no qual a&#160;instrução, nomeada por um&#160;mnemônico, opera. O operando pode ser um&#160;registrador, um&#160;endereço de memória, uma constante literal, ou um rótulo. Um exemplo simples&#160;é:
+                            </p>
+                            <ul><li>MOV&#160;&#160; DS, AX;</li></ul>
+                            <p><i>Onde o valor no operando registrador&#160;AX&#160;deve ser movido para o registrador&#160;DS.</i>
+                            </p><p>Dependendo da&#160;instrução, pode haver zero, um, dois ou mais operandos.
+                            </p>
+                            <h5><span id="Instru.C3.A7.C3.B5es_com_quatro_operandos"></span><span  id="Instruções_com_quatro_operandos">Instruções com quatro operandos</span></span><9"  title="Editar secção: Instruções com quatro operandos">editar</a>  </span>9" title="Editar secção: Instruções com quatro operandos"></span></span></h5>
+                            <p>OPCODE Operando1 Operando2 Operando3 Endereço da próxima instrução.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>ADD A, B, C, P</li></ul>
+                            <p><i>C=A+B, onde soma-se A com B e o resultado é guardado em C, e P guarda o endereço da próxima instrução. Uma vantagem é que a instrução é complexa e tem a desvantagem de ocupar muito espaço na MP.</i>
+                            </p>
+                            <h5><span></span><span  id="Instruções_com_três_operandos">Instruções com três operandos</span></span><10"  title="Editar secção: Instruções com três operandos">editar</a>  </span>10" title="Editar secção: Instruções com três operandos"></span></span></h5>
+                            <p>OPCODE Operando1 Operando2 Operando3.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>ADD A, B, C</li></ul>
+                            <p><i>C = A + B, onde soma-se A com B e o resultado é guardado em C.</i>
+                            </p><p>Em <b><a href="/wiki/CISC" title="CISC">CISC</a></b> torna-se uma única instrução:<b>&#160;</b>ADD&#160;<i>A, B, C.</i>
+                            </p><p>Em <b><a href="/wiki/RISC" title="RISC">RISC</a></b> as instruções aritméticas usam apenas registradores, são necessários 2 operandos explícitos e instruções de load/store.
+                            </p><p><i>C = A + B</i>&#160;tem&#160;quatro instruções.
+                            </p><p>Ao contrário de 2-operandos ou 1-operando, ele deixa todos os três valores (A, B e C) nos registradores para posterior reutilização.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span></span>9<span></span></a></sup>
+                            </p>
+                            <h5><span  id="Instruções_com_dois_operandos">Instruções com dois operandos</span></span><11"  title="Editar secção: Instruções com dois operandos">editar</a>  </span>11" title="Editar secção: Instruções com dois operandos"></span></span></h5>
+                            <p>OPCODE Operando1 Operando2.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>ADD A, B</li></ul>
+                            <p><i>A = A + B, onde soma-se A com B e o resultado é guardado em A.</i>
+                            </p><p>Muitas máquinas CISC e RISC se enquadram nesta categoria.
+                            </p><p><b>CISC -</b> Muitas vezes as máquinas estão&#160;limitadas a um operando de memória&#160;por instrução,&#160;isto requer load/store para qualquer movimento de memória, independentemente se o&#160;resultado é armazenado em um local diferente (C = A + B) ou a mesma localização de memória (A = A + B).
+                            </p><p><i>C = A + B</i>&#160;tem&#160;três instruções.
+                            </p><p><b>RISC -</b> Exige cargas de memória de forma explícita, as instruções seriam:
+                            </p>
+                            <ol><li>LOAD A<i>, Reg1</i></li>
+                            <li>LOAD <i>B, Reg2</i></li>
+                            <li>ADD&#160;<i>Reg1, Reg2</i></li>
+                            <li>STORE<b>&#160;</b><i>Reg2, C</i></li></ol>
+                            <p><i>C = A + B</i>&#160;tem&#160;quatro instruções.
+                            </p>
+                            <h5><span id="Instru.C3.A7.C3.B5es_com_1_operando"></span><span  id="Instruções_com_1_operando">Instruções com 1 operando</span></span><12"  title="Editar secção: Instruções com 1 operando">editar</a>  </span>12" title="Editar secção: Instruções com 1 operando"></span></span></h5>
+                            <p>OPCODE Op1
+                            </p><p>Chamadas&#160;de máquinas de acumulador, pertence aos primeiros computadores e muitos&#160;microcontroladores. Um registrador específico é utilizado para essa instrução: ACC, ele é um operando implícito.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>ADD Op → ACC = ACC + Op.</li></ul>
+                            <p><i>C = A + B</i>&#160;tem&#160;três instruções:
+                            </p>
+                            <ol><li><i>LOAD A</i></li>
+                            <li><i>ADD B</i></li>
+                            <li><i>STORE C</i></li></ol>
+                            <h5><span id="Instru.C3.A7.C3.B5es_com_zero_operando"></span><span  id="Instruções_com_zero_operando">Instruções com zero operando</span></span><13"  title="Editar secção: Instruções com zero operando">editar</a>  </span>13" title="Editar secção: Instruções com zero operando"></span></span></h5>
+                            <p><i>Não possui operandos, utiliza PILHA.</i>
+                            </p><p>Todas as operações aritméticas ocorrer usando o topo ou duas posições na pilha (topo e segunda posição).
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li><i>C = A + B</i></li></ul>
+                            <p>Tem&#160;quatro instruções:
+                            </p>
+                            <ol><li>PUSH A</li>
+                            <li>PUSH B</li>
+                            <li>ADD</li>
+                            <li>POP C</li></ol>
+                            <h4><span id="Modo_de_Endere.C3.A7amento"></span><span  id="Modo_de_Endereçamento">Modo de Endereçamento</span></span><14"  title="Editar secção: Modo de Endereçamento">editar</a>  </span>14" title="Editar secção: Modo de Endereçamento"></span></span></h4>
+                            <p>Os vários modos de endereçamento que são definidos em um conjunto de instruções definem como a&#160;linguagem de máquina identifica o&#160;operando&#160;(ou operandos) de cada instrução. Um modo de endereçamento especifica a forma de calcular o&#160;endereço de memória&#160;de um operando.
+                            </p><p>Arquiteturas de computadores diferentes variam muito quanto ao número de modos de endereçamento. Existem alguns benefícios ao se utilizar modos de endereçamentos mais simples, um deles é a maior facilidade de implementar pipelines.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span></span>10<span></span></a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span></span>11<span></span></a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span></span>12<span></span></a></sup>
+                            </p><p>Alguns exemplos de modos de endereçamento:
+                            </p>
+                            <h5><span  id="Modo_Imediato">Modo Imediato</span></span><15"  title="Editar secção: Modo Imediato">editar</a>  </span>15" title="Editar secção: Modo Imediato"></span></span></h5>
+                            <p>Método simples e rápido, o valor do campo operando é o próprio dado.
+                            </p><p>Intel Pentium e AMD Athlon usam algumas instruções de modo imediato: desvio, movimentação, operações aritméticas com constantes, etc.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>MOV AX, 14H</li></ul>
+                            <p><i>Copiar o valor hexadecimal 14 para o registrador AX.</i>
+                            </p>
+                            <h5><span  id="Modo_Direto">Modo Direto</span></span><16"  title="Editar secção: Modo Direto">editar</a>  </span>16" title="Editar secção: Modo Direto"></span></span></h5>
+                            <p>O valor do campo operando indica o endereço do dado. Requer apenas uma referência à memória principal para busca-lo.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>MOV&#160; AY,8077h</li></ul>
+                            <p><i>É movido o valor do campo de endereço 8077h para AY, apenas o valor da memória pode ser alterado mas não o endereço.</i>
+                            </p>
+                            <h5><span id="Endere.C3.A7amento_por_Registrador"></span><span  id="Endereçamento_por_Registrador">Endereçamento por Registrador</span></span><17"  title="Editar secção: Endereçamento por Registrador">editar</a>  </span>17" title="Editar secção: Endereçamento por Registrador"></span></span></h5>
+                            <p>O operando aponta para um registrador, o qual contém o dado ou pode apontar para um registrador no qual contém um endereço de memória (ponteiro) onde está o dado.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>MOV&#160; AL,BX</li></ul>
+                            <p><i>É movido o registrador BX para o registrador AL.</i>
+                            </p>
+                            <h5><span id="Endere.C3.A7amento_por_Registrador_Indireto"></span><span  id="Endereçamento_por_Registrador_Indireto">Endereçamento por Registrador Indireto</span></span><18"  title="Editar secção: Endereçamento por Registrador Indireto">editar</a>  </span>18" title="Editar secção: Endereçamento por Registrador Indireto"></span></span></h5>
+                            <p>Permite acessar a memória indiretamente através de um registrador.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>MOV&#160; AX,BP</li></ul>
+                            <p><i>É movido o endereço da memória BP para o registrador AX.</i>
+                            </p>
+                            <h5><span  id="Modo_Indexado">Modo Indexado</span></span><19"  title="Editar secção: Modo Indexado">editar</a>  </span>19" title="Editar secção: Modo Indexado"></span></span></h5>
+                            <p>Os deslocamentos gerados por este modos de endereçamento é a soma da constante e do registrador especificado.
+                            </p><p>Exemplo:
+                            </p>
+                            <ul><li>MOV&#160; AL,BX+015</li></ul>
+                            <p><i>É movido a soma do registrador com a constante BX+015 para o registrador AL.</i><sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span></span>13<span></span></a></sup>
+                            </p>
+
+
+                       
+                        <br />
+                      
+
+                         <!-- \\\\\\\\\\\\ RESPONSIVE VOICE ///////////-->
+                        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+                        <script src="http://code.jquery.com/jquery-git2.js"></script>
+                        <div class="card-header" style="display: inline-block; margin: 0px auto;" id="voicetestdiv">
+                             <div class="voiceform">
+                                        <h5 style="text-align:center;"><i class="fa fa-2x fas fa-blind"></i> Acessibilidade <i class="fa fa-2x fas fa-low-vision"></i></h5>
+                                        <textarea maxlength="500" style="-webkit-input-placeholder: color: #555;margin-top:8px;display:none;" placeholder=" Resumo da matéria 02 " id="text" class="input input--dropdown js--animations" cols="35" rows="3"></textarea>
+                                        <select style="display:none;" id="voiceselection" onclick="responsiveVoice.speak('Select a voice');" class="input input--dropdown js--animations">
+                                            <option value="UK English Female">UK English Female</option>
+                                            <option value="UK English Male">UK English Male</option>
+                                            <option value="US English Female">US English Female</option>
+                                            <option value="US English Male">US English Male</option>
+                                            <option value="Arabic Male">Arabic Male</option>
+                                            <option value="Arabic Female">Arabic Female</option>
+                                            <option value="Armenian Male">Armenian Male</option>
+                                            <option value="Australian Female">Australian Female</option>
+                                            <option value="Australian Male">Australian Male</option>
+                                            <option value="Bangla Bangladesh Female">Bangla Bangladesh Female</option>
+                                            <option value="Bangla Bangladesh Male">Bangla Bangladesh Male</option>
+                                            <option value="Bangla India Female">Bangla India Female</option>
+                                            <option value="Bangla India Male">Bangla India Male</option>
+                                            <option value="Brazilian Portuguese Female">Brazilian Portuguese Female</option>
+                                            <option value="Brazilian Portuguese Male">Brazilian Portuguese Male</option>
+                                            <option value="Chinese Female">Chinese Female</option>
+                                            <option value="Chinese Male">Chinese Male</option>
+                                            <option value="Chinese (Hong Kong) Female">Chinese (Hong Kong) Female</option>
+                                            <option value="Chinese (Hong Kong) Male">Chinese (Hong Kong) Male</option>
+                                            <option value="Chinese Taiwan Female">Chinese Taiwan Female</option>
+                                            <option value="Chinese Taiwan Male">Chinese Taiwan Male</option>
+                                            <option value="Czech Female">Czech Female</option>
+                                            <option value="Czech Male">Czech Male</option>
+                                            <option value="Danish Female">Danish Female</option>
+                                            <option value="Danish Male">Danish Male</option>
+                                            <option value="Deutsch Female">Deutsch Female</option>
+                                            <option value="Deutsch Male">Deutsch Male</option>
+                                            <option value="Dutch Female">Dutch Female</option>
+                                            <option value="Dutch Male">Dutch Male</option>
+                                            <option value="Estonian Male">Estonian Male</option>
+                                            <option value="Filipino Female">Filipino Female</option>
+                                            <option value="Finnish Female">Finnish Female</option>
+                                            <option value="Finnish Male">Finnish Male</option>
+                                            <option value="French Female">French Female</option>
+                                            <option value="French Male">French Male</option>
+                                            <option value="French Canadian Female">French Canadian Female</option>
+                                            <option value="French Canadian Male">French Canadian Male</option>
+                                            <option value="Greek Female">Greek Female</option>
+                                            <option value="Greek Male">Greek Male</option>
+                                            <option value="Hindi Female">Hindi Female</option>
+                                            <option value="Hindi Male">Hindi Male</option>
+                                            <option value="Hungarian Female">Hungarian Female</option>
+                                            <option value="Hungarian Male">Hungarian Male</option>
+                                            <option value="Indonesian Female">Indonesian Female</option>
+                                            <option value="Indonesian Male">Indonesian Male</option>
+                                            <option value="Italian Female">Italian Female</option>
+                                            <option value="Italian Male">Italian Male</option>
+                                            <option value="Japanese Female">Japanese Female</option>
+                                            <option value="Japanese Male">Japanese Male</option>
+                                            <option value="Korean Female">Korean Female</option>
+                                            <option value="Korean Male">Korean Male</option>
+                                            <option value="Latin Female">Latin Female</option>
+                                            <option value="Latin Male">Latin Male</option>
+                                            <option value="Nepali">Nepali</option>
+                                            <option value="Norwegian Female">Norwegian Female</option>
+                                            <option value="Norwegian Male">Norwegian Male</option>
+                                            <option value="Polish Female">Polish Female</option>
+                                            <option value="Polish Male">Polish Male</option>
+                                            <option value="Portuguese Female">Portuguese Female</option>
+                                            <option value="Portuguese Male">Portuguese Male</option>
+                                            <option value="Romanian Female">Romanian Female</option>
+                                            <option value="Russian Female">Russian Female</option>
+                                            <option value="Russian Male">Russian Male</option>
+                                            <option value="Sinhala">Sinhala</option>
+                                            <option value="Slovak Female">Slovak Female</option>
+                                            <option value="Slovak Male">Slovak Male</option>
+                                            <option value="Spanish Female">Spanish Female</option>
+                                            <option value="Spanish Male">Spanish Male</option>
+                                            <option value="Spanish Latin American Female">Spanish Latin American Female</option>
+                                            <option value="Spanish Latin American Male">Spanish Latin American Male</option>
+                                            <option value="Swedish Female">Swedish Female</option>
+                                            <option value="Swedish Male">Swedish Male</option>
+                                            <option value="Tamil Female">Tamil Female</option>
+                                            <option value="Tamil Male">Tamil Male</option>
+                                            <option value="Thai Female">Thai Female</option>
+                                            <option value="Thai Male">Thai Male</option>
+                                            <option value="Turkish Female">Turkish Female</option>
+                                            <option value="Turkish Male">Turkish Male</option>
+                                            <option value="Ukrainian Female">Ukrainian Female</option>
+                                            <option value="Vietnamese Female">Vietnamese Female</option>
+                                            <option value="Vietnamese Male">Vietnamese Male</option>
+                                            <option value="Afrikaans Male">Afrikaans Male</option>
+                                            <option value="Albanian Male">Albanian Male</option>
+                                            <option value="Bosnian Male">Bosnian Male</option>
+                                            <option value="Catalan Male">Catalan Male</option>
+                                            <option value="Croatian Male">Croatian Male</option>
+                                            <option value="Esperanto Male">Esperanto Male</option>
+                                            <option value="Icelandic Male">Icelandic Male</option>
+                                            <option value="Latvian Male">Latvian Male</option>
+                                            <option value="Macedonian Male">Macedonian Male</option>
+                                            <option value="Moldavian Female">Moldavian Female</option>
+                                            <option value="Moldavian Male">Moldavian Male</option>
+                                            <option value="Montenegrin Male">Montenegrin Male</option>
+                                            <option value="Serbian Male">Serbian Male</option>
+                                            <option value="Serbo-Croatian Male">Serbo-Croatian Male</option>
+                                            <option value="Swahili Male">Swahili Male</option>
+                                            <option value="Welsh Male">Welsh Male</option>
+                                            <option value="Fallback UK Female">Fallback UK Female</option>
+                                        </select>
+                                        &nbsp;&nbsp;&nbsp;<div style="float:center;text-align:center;"><button id="playbutton" class="butt js--triggerAnimation"  type="button" value="Play">🔊 Iniciar Leitura 📖</button> </div>
+                                    </div>
+                                </div>
+                           
+                            <div id="playshield" class="poweredby_container">
+                                <svg viewBox="-50 -50 612 612" width="0%" height="0%" xmlns="http://www.w3.org/2000/svg">
+                                    <filter id="black-glow">
+                                        <feColorMatrix type="matrix" values="0 0 0 0.6   0  0 0 0 0   0  0 0 0 0   0  0 0 0 1 0"></feColorMatrix>
+                                        <feGaussianBlur id="filterblur" stdDeviation="0" result="coloredBlur"></feGaussianBlur>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"></feMergeNode>
+                                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                                        </feMerge>
+                                    </filter>
+                                </svg>
+                            </div>
+                            <script type="text/javascript">
+                                var voicelist = responsiveVoice.getVoices();    
+                                var vselect = $("#voiceselection");    
+                                $.each(voicelist, 
+                                function() {        
+                                    vselect.append($("<option >").val(this.name).text(this.name));    
+                                    });            
+                                    playbutton.onclick = function() 
+                                    {responsiveVoice.speak(($('#text').val())?$('#text').val():$('#text').attr("placeholder"),$('#voiceselection').val());$('#text').focus();}; playshield.onclick = function() 
+                                    {responsiveVoice.speak(($('#text').val())?$('#text').val():$('#text').attr("placeholder"),$('#voiceselection').val());$('#text').focus();};    
+                                    $('#voicetestdiv').hide();    
+                                    $('#waitingdiv').show();    
+                                    responsiveVoice.OnVoiceReady = function() {        
+                                $('#voicetestdiv').fadeIn(0.5);$('#waitingdiv').fadeOut(0.5);$('#text').focus();$('#voiceselection').val('Brazilian Portuguese Female')}
+                            </script>
+                    </div>
+                 <!-- \\\\\\\\\\\\ END RESPONSIVE VOICE ///////////-->
+
+
+
+            
+
+                    <div class="col-md-4">       
+                     
+                         <style>
+                            .caixavideo {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 0;
+                                    padding-bottom: 56.25%;
+                                    
+                                }
+                                .video {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 0.8rem;
+                                }
+                        </style>    
+                                <h2 class="card-header" style="text-align:center;">Vídeo <i class="fa fa-2x fab fa-youtube" style="vertical-align: sub;"></i><a target="_blank" href="https://www.echalk.co.uk"> eChalk.co.uk</a></h2> 
+                               
+                                <h3>Quer saber como um computador executa um programa?</h3>
+                                         <div class="caixavideo">
+                                            <iframe class="video" src="https://www.youtube.com/embed/FRCXF1Sak7s?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                                        </div>
+                            <h5> Se você realmente quer entender o que acontece quando um programa é executado, este é o lugar ideal para começar. Esta simulação fantástica fornece um modelo conceitual simples do funcionamento interno de um computador.</h5>
+                            <h5> Seu desafio é construir um programa curto para resolver um problema simples e, ao fazer isso, você descobrirá a relação entre os registradores, RAM, barramento do sistema e conjunto de instruções.</h5>
+                            <h5> Versão apenas para demostração.</h5>
+                             <a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";><img style="width:100%;" src="images/echalk.png"/></a>
+                             <h5><a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";>www.eChalk.co.uk</a></h5>
+                                    
+
+                    </div>
+                </div>
+                
+            </div>
+            <!-- fim container -->
+        </main>
+ <br>
+  
+
+  <!-- footer -->
+        <footer class="card-footer">
+                 <p style="float:right;text-align:centerdisplay: inline-block;line-height:200%;">Alunos <c style="font-size:1.5em;">👨‍💻</c> <a style="color:#000;" target="_blank" href="https://www.facebook.com/tiago.zangerolami"> Tiago José Zangerolami <i class="fa fa-1x fab fa-facebook-square"></i></a> e <a style="color:#000;" target="_blank" href="https://www.facebook.com/people/Rafa-Fragoso/100012343621106">Rafael Fragoso Rodrigues <i class="fa fa-1x fab fa-facebook-square"></i></a><br>Disciplina de Introdução à Arquitetura de Computadores, Professora Márcia Fink<br>Curso Superior de Licenciatura em Computação<br><a style="color:#000;" title="Site Iffar SA" target="_blank" href="https://www.iffarroupilha.edu.br/santo-augusto">&nbsp;IFFar&nbsp;<img style="width:1em;" src="images/iffarsa.png"/>&nbsp;Santo Augusto RS</a></p> 
+
+                 <p style="float:left;display: inline-block;"><i title="HTML5" class="fa fa-2x fab fa-html5"></i>&nbsp;&nbsp;<i title="CSS3" class="fa fa-2x fab fa-css3"></i>&nbsp;&nbsp;<img title="JavaScript" style="width:25px;" src="images/js.png"/>&nbsp;&nbsp;<a target="_blank" href="https://jquery.com/"><img title="JQuery" style="width:25px;" src="images/jquery.png"/></a>&nbsp;&nbsp;<a title="CSS3" target="_blank" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"><img title="Modelo Bootstrap" style="width:25px;" src="images/bootstrap.png"/></a> <a style="color:#000;" title="Modelo Quiz" target="_blank" href="https://github.com/QuickenLoans/SlickQuiz"><i class="fa fa-2x fab fa-github"></i></a>&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:78px;height:21px"src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a> <a target="_blank" href="https://infinityfree.net/"><img title="Hospedado em infinityfree" style="width:7rem;" src="images/infinityfree.png"/></a><br><a target="_blank" title="fontawesome" href="https://fontawesome.com/"><i class="fa fa-2x fab fa-font-awesome"></i></a> <a target="_blank" href="https://giphy.com/"><img title="Giphy" style=";width:6rem;" src="images/giphy.png"/></a> <a title="Leitor de Texto" target="_blank" href="https://responsivevoice.com/"><img style="width:7em;" src="images/responsivevoice.png"/></a>&nbsp;&nbsp;<a target="_blank" href="https://br.freepik.com/fotos-gratis/bonecas-em-uma-placa-mae-de-computador_999834.htm"><img style="width:6rem;" src="images/freepik.png"/></a><br><n style="font-size:10px;">Utilize navegadores:</n5>&nbsp;&nbsp;<img src="images/brownser_chome2.jpg" border="0" title="Chrome 2x.x ou superior">&nbsp;&nbsp;<img src="images/brownser_fire2.jpg" border="0" title="Firefox 2x.x ou superior">&nbsp;&nbsp;<img src="images/opera.png" border="0" title="Opera"><br><a title="Tiago José Zangerolami" target="_blank" style="color:#000;" href="https://br.linkedin.com/in/tiago-front-end-web"><y style="font-size:10px;vertical-align:middle;">Website&nbsp;<img src="images/responsive.png" border="0" title="Resposive Desing"/>&nbsp;By</y>&nbsp;<img style="width:2rem;border-radius:0.8em;" src="images/tiago.jpeg"/><img style="width:2rem;border-radius:0.8em;" src="images/www.tiago.png"/></a></p>
+           
+        </footer>       
+
+        
+        <!-- rolar para cima -->
+        <script type="text/javascript">
+            $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+            });
+            
+            function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+            }
+        </script>
+        <div class="smoothscroll-top">
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span>
+        </div>
+        <!-- fim rolar para cima -->
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery  document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+       
+        <script src=".js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- QUIZ -->
+        <script src="quiz/js/jquery.js"></script>
+        <script src="quiz/js/slickQuiz-config.js"></script>
+        <script src="quiz/js/slickQuiz.js"></script>
+        <script src="quiz/js/master.js"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta('Content-Type: application/json; charset=utf-8');> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="conjunto de instruções, arquiteura de computadores">
+        <meta name="author" content="Tiago José Zangerolami">
+        <meta name="keywords" content="conjunto de instrucoes, arquiteura de computadores, instituto federal farroupilha, iffarroupilha, iff, ifet" />
+        <meta name="rights" content="Tiago José Zangerolami, sem fins lucrativos"/>
+        <meta name="description" content="Traballho sobre conjunto de instrucoes, Disciplina Arquiteura de Computadores" />
+
+        <title>Conjunto de Instruções</title>
+
+        <link href="favicon.ico" rel="shortcut icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+        <!-- button jumbotron bootstraps -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+        
+        <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- Folha de estilo cronometro -->
+        <link rel="stylesheet" href="cronometro/cronometro.css" type="text/css" media="screen" />
+
+        <!-- esxonde navbar e button para cima -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      
+    </head>
+
+    <body>
+   
+        <!-- Esconde Navbar -->
+        <script>
+           $(window).scroll(function() {
+            if ($(this).scrollTop()>200)
+            {
+                $('.navbar').fadeOut();
+            }
+             else
+              {
+                 $('.navbar').fadeIn();
+              }
+            });
+        </script>
+        <!-- END Esconde Navbar -->
+
+        <!-- Efeito máquina de escrever -->
+        <script>//<![CDATA[
+            window.onload=function(){
+              
+            (function(){
+            var container = document.getElementById('efeitoMaquina');
+            
+            function efeitoMaquinaEscrever(el, text) {
+            var timeEffect = 50;
+            var interval = setInterval(function(){
+            	el.innerHTML += text.substr(0, 1);
+              text = text.substr(1);
+              
+              if(!text.length)
+              	clearInterval(interval);
+                
+            }, timeEffect);
+            }
+            
+            efeitoMaquinaEscrever(container, container.getAttribute('data'));
+            }(this));
+            }
+            
+            //]]>
+        </script>
+        <!-- FIM Efeito máquina de escrever -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://conjuntoinstrucoes.epizy.com/?i=1#"><i class="fa fa-1x fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-graduation-cap"></i> IFFar SA</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                             <a class="dropdown-item" target="_blank" title="Sistema Integrado de Gestão de Atividades Acadêmicas" href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"><i class="fa fa-1x fas fa-graduation-cap"></i> SIGAA</a>
+                             <a class="dropdown-item" target="_blank" title="Portal do Aluno IFF Santo Augusto" href="https://www.iffarroupilha.edu.br/portal-aluno"><i class="fa fa-1x fas fa-graduation-cap"></i> Portal Aluno</a>
+                        </div>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fab fa-youtube"></i> UNIVESP</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCBL2tfrwhEhX52Dze_aO3zA"><img src="univesp.jpg" style="width:25px;height:15px;"> Uni. Virtual de São Paulo</a>
+                            <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=i01yuM5KyNg&list=PLxI8Can9yAHdG-xUDj6i-HGB7IAsAU-t1&index=5"><i class="fa fa-1x fab fa-youtube"></i> Arquitetura conjunto instruções</a>
+                            <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=VYSy21RwNIc&list=PLxI8Can9yAHdG-xUDj6i-HGB7IAsAU-t1&index=6"><i class="fa fa-1x fab fa-youtube"></i> Conjunto Instruções MIPS</a>
+                            <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=i_NeQ2hblX0&list=PLxI8Can9yAHdG-xUDj6i-HGB7IAsAU-t1&index=7"><i class="fa fa-1x fab fa-youtube"></i> Conjunto Instruções MIPS(2)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-sitemap"></i> Arquitetura Computadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="instrucoes.html"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções 1</a>
+                            <a class="dropdown-item" target="_blank" href="#"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções 2</a>
+                            <a class="dropdown-item" target="_blank" href="matriz.html"><i class="fa fa-1x fas fa-laptop"></i> Efeito Matriz 0101010</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">
+                        Arquitetura de Computadores</br>
+                        <p class="display-4";>Conjunto de Instruções</p>
+                    </h1>
+                    <!--EFEITO MÁQUINA DE ESCREVER 
+                    <div id="efeitoMaquina" data="0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 1 1 0 0 0 0 0 1 0 1 0 1 0 1 1 1 0 1 1 0 1 1 0 0 1 0 1 0 1 1 1 1 0 0 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 1 0 1 0 0 1 0 1 0" style="text-align:center;color:#000;background-color: #fff;opacity: 0.6;line-height:85%;"></div>-->
+
+                    <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+                </div>
+            </div>
+
+            <div class="container">
+                
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-9">
+                         
+                        <h2>Quiz: Conjunto de Instruções <i class="fa fa-1x fas fa-book"></i></h2>
+                                         
+                           
+                            <!-- QUIZ -->
+                        <div id="slickQuiz">
+                            <!--<h1 class="quizName">
+                                 where the quiz name goes 
+                            </h1>-->
+                            
+                              
+
+                            <div class="quizArea">      
+                                                              
+                               <meta charset="utf-8" />
+                            <meta('Content-Type: application/json; charset=utf-8');>
+                                <div class="quizHeader">
+                                     <!-- where the quiz main copy goes -->
+                                    <a class="button startQuiz" href="#"><i class="fa fa-1x fas fa-flag-checkered"></i> Iniciar Quiz!</a>
+                                </div>
+                                <!-- where the quiz gets built -->
+                            </div>
+                            <div class="quizResults">
+                                <h3 class="quizScore">
+                                    Você acertou: 
+                                    <span>
+                                        <!-- where the quiz score goes -->
+                                    </span>
+                                </h3>
+                                <h3 class="quizLevel">
+                                    <strong>Ranking:</strong> 
+                                    <span>
+                                        <!-- where the quiz ranking level goes -->
+                                    </span>
+                                </h3>
+                                <div class="quizResultsCopy">
+                                    <!-- where the quiz result copy goes -->
+                                </div>
+                                <ul style="margin-top:20px;">
+                                    <a class="button resetQuiz" onClick="history.go(0)" value="Atualizar" href="#"><i class="fa fa-1x fas fa-flag-checkered"></i> Reiniciar</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- FIM DO QUIZ -->
+
+                        
+                        <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+                    </div>
+                    <!-- 
+                        <div class="col-md-4">
+                          <h2>Heading</h2>
+                          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>-->
+
+                    <div class="col-md-3">
+                               <h4>Cronômetro (tempo resolução Quiz) <i class="fa fa-2x fas fa-user-clock"></i></h4>
+                                <span id="hora" class="btn btn-info">00h</span><span id="minuto" class="btn btn-info">00m</span><span id="segundo" class="btn btn-info">00s</span></br>
+                                <!--<input class="button" type="button" value="Gravar" onclick="volta();">-->
+                                <div id="comeca"><input class="button" type="button" value="Começar" onclick="tempo(1);"></div>
+                                <div id="parar"><input class="button" type="button" value="Parar" onclick="parar();"></div>
+                                <!--<input class="button" type="button" value="Limpa Registros" onclick="limpa();"></br>
+                                </br><i>Registros:</i><div id="voltas"></div></br>-->
+
+                        <style>
+                            .caixavideo {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 0;
+                                    padding-bottom: 56.25%;
+                                }
+                                .video {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                        </style>  
+                                </br></br>
+                                <hr><!--linha separação containers -->
+                                <h2 style="text-align:center;">Vídeo <i class="fa fa-1x fab fa-youtube" style="vertical-align: sub;"></i><a target="_blank" href="https://www.echalk.co.uk"> eChalk.co.uk</a></h2> 
+                               
+                                <h3>Quer saber como um computador executa um programa?</h3>
+                                         <div class="caixavideo">
+                                            <iframe class="video" src="https://www.youtube.com/embed/FRCXF1Sak7s?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                                        </div>
+                            <h5> Se você realmente quer entender o que acontece quando um programa é executado, este é o lugar ideal para começar. Esta simulação fantástica fornece um modelo conceitual simples do funcionamento interno de um computador.</h5>
+                            <h5> Seu desafio é construir um programa curto para resolver um problema simples e, ao fazer isso, você descobrirá a relação entre os registradores, RAM, barramento do sistema e conjunto de instruções.</h5>
+                            <h5> Versão apenas para demostração.</h5>
+                             <a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";><img style="width:100%;" src="echalk.png"></img></a>
+                             <h5><a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";>www.eChalk.co.uk</a></h5>
+                                
+                    </div>
+                </div>
+                <hr><!--linha separação containers -->
+            </div>
+            <!-- fim container -->
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <p style="text-align:center;">Website By <c style="font-size:1.5em;">👨‍💻</c> Tiago José Zangerolami, Rafael Fragoso Rodrigues</br>Disciplina de Introdução à Arquitetura de Computadores, Professora Márcia Fink</br>Curso Superior de Licenciatura em Computação, <a style="color:#000;" title="Site Iffar SA" target="_blank" href="https://www.iffarroupilha.edu.br/santo-augusto"><img style="width:1em;" src="iffarsa.png"></img> IFFar Santo Augusto RS</a></p>
+             </div>
+            <div class="container" style="background: #eee;">
+                <hr><!--linha separação containers -->
+                 <p style="text-align:center;"><i title="HTML5" class="fa fa-2x fab fa-html5"></i> <i title="CSS3"class="fa fa-2x fab fa-css3"></i> <img title="JavaScript" style="width:25px;" src="js.png"></img> <a target="_blank" href="https://jquery.com/"><img title="JQuery" style="width:25px;" src="jquery.png"></img></a> <a target="_blank" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"><img title="Modelo Bootstrap" style="width:25px;" src="bootstrap.png"></img></a> <a target="_blank" href="https://infinityfree.net/"><img title="Hospedado em infinityfree" style="width:7rem;" src="infinityfree.png"></img></a> <a target="_blank" title="fontawesome" href="https://fontawesome.com/"><i class="fa fa-2x fab fa-font-awesome"></i></a> <a target="_blank" href="https://giphy.com/"><img title="Giphy" style=";width:6rem;" src="giphy.png"></img></a> <a target="_blank" href="https://br.freepik.com/fotos-gratis/bonecas-em-uma-placa-mae-de-computador_999834.htm"><img style="width:6rem;" src="freepik.png"></img></a></p>
+            </div>       
+        </footer>
+       
+
+        <!-- rolar para cima -->
+        <script type="text/javascript">
+            $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+            });
+            
+            function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+            }
+        </script>
+        <div class="smoothscroll-top">
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span>
+        </div>
+        <!-- fim rolar para cima -->
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+
+        <!-- funcoes cronometro-->
+        <script src="cronometro/cronometro.js"></script>
+
+        <script src=".js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Funcoes QUIZ -->
+        <script src="quiz/js/jquery.js"></script>
+        <script src="quiz/js/slickQuiz-config.js"></script>
+        <script src="quiz/js/slickQuiz.js"></script>
+        <script src="quiz/js/master.js"></script>
+    </body>
+</html>

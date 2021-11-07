@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="utf-8" />
+        <meta('Content-Type: application/json; charset=utf-8');> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport"              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" type="text/css" href="http://mobiletest.me/libs/css/foundation-essentials-5.5.1/css/normalize.302.min.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen">-->
+        <meta name="author"               content="Desenvolvido por Tiago José Zangerolami, https://br.linkedin.com/in/tiago-front-end-web">
+        <meta name="keywords"             content="conjunto de instrucoes, arquitetura de computadores, instituto federal, iffarroupilha, iff, IFFar SA" />
+        <meta name="rights"               content="Tiago José Zangerolami"/>
+        <meta name="description"          content="Introdução à Arquiteura de Computadores, Conjunto de instruções, Superior em Licenciatura em Computação, IFFar SA" />
+    
+    <title>Conjunto de Instruções</title>
+
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+   $(window).scroll(function() {
+
+    if ($(this).scrollTop()>200)
+     {
+        $('.navbar').fadeOut();
+     }
+    else
+     {
+      $('.navbar').fadeIn();
+     }
+ });
+    </script>
+
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="my-1 mx-2 close">X</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav nav-fill w-100">
+                   
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width:0.8em;" src="images/iffarsa.png"/> IFFar SA</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" title="Portal do Aluno IFF Santo Augusto" href="https://www.iffarroupilha.edu.br/portal-aluno"><img style="width:0.8em;" src="images/iffarsa.png"/> Portal do Aluno</a>
+                             <a class="dropdown-item" target="_blank" title="Sistema Integrado de Gestão de Atividades Acadêmicas" href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"><img style="width:0.8em;" src="images/iffarsa.png"/> Sistema SIGAA</a>
+                             
+                        </div>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-sitemap"></i> Arquitetura Computadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="instrucoes.html"><i class="fa fa-1x fas fa-sitemap"></i> Introdução > Ciclo Instruções</a>
+                            <a class="dropdown-item" target="_blank" href="http://conjuntoinstrucoes.epizy.com/linguagens.html"><i class="fa fa-1x fas fa-sitemap"></i> Linguagens > Conversões</a>
+                            <!--<a class="dropdown-item" target="_blank" href="instrucoes03.html"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções - terceira parte</a>-->
+                            <a class="dropdown-item" target="_blank" href="matrix.html"><i class="fa fa-1x fas fa-laptop"></i> Efeito Matrix 0101010</a>
+                        </div>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="http://conjuntoinstrucoes.epizy.com/?i=1#"><i class="fa fa-1x fas fa-home"></i> Quiz<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Arquitetura de Computadores</br><p class="display-4";><img src="favicon.ico" style="width:20px;height:20px;"/> Conjunto de Instruções</p></h1>
+            </div>
+        </div>
+     </main>
+        <div class="">                            
+            <h1 style="text-align:center;color:#000;">E F E I T O - - - M A T R I X</h1>
+            <h5 style="text-align:center;color:#000;"><a target="_blank" href="https://codepen.io/riazxrazor/pen/Gjomdp">HTML5 Canvas Matrix Effect A PEN BY Riaz Laskar</a></h5> 
+
+                        <style>
+                            body {
+                            margin: 0;
+                            }
+
+                            canvas {
+                            display: block;
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            }
+                        </style>
+
+                        <canvas id="canvas" width="140" height="297">Canvas is not supported in your browser.</canvas>
+                        <canvas id="canvas2" width="140" height="297">Canvas is not supported in your browser.</canvas>
+
+
+                        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+                        <script id="rendered-js">
+                            var canvas = document.getElementById('canvas'),
+                        ctx = canvas.getContext('2d'),
+                        canvas2 = document.getElementById('canvas2'),
+                        ctx2 = canvas2.getContext('2d'),
+                        // full screen dimensions
+                        cw = window.innerWidth,
+                        ch = window.innerHeight,
+                        charArr = ['Conjunto Instrucoes', '', 'C', 'O', 'N', 'J', 'U', 'N', 'T', 'O', '', 'I', 'N', 'S', 'T', 'R', 'U', 'C', 'O', 'E', 'S', ''],
+                        maxCharCount = 100,
+                        fallingCharArr = [],
+                        fontSize = 15,
+                        maxColums = cw / fontSize;
+                        canvas.width = canvas2.width = cw;
+                        canvas.height = canvas2.height = ch;
+
+
+                        function randomInt(min, max) {
+                        return Math.floor(Math.random() * (max - min) + min);
+                        }
+
+                        function randomFloat(min, max) {
+                        return Math.random() * (max - min) + min;
+                        }
+
+                        function Point(x, y)
+                        {
+                        this.x = x;
+                        this.y = y;
+                        }
+
+                        Point.prototype.draw = function (ctx) {
+
+                        this.value = charArr[randomInt(0, charArr.length - 1)].toUpperCase();
+                        this.speed = randomFloat(1, 5);
+
+
+                        ctx2.fillStyle = "rgba(255,255,255,0.8)";
+                        ctx2.font = fontSize + "px san-serif";
+                        ctx2.fillText(this.value, this.x, this.y);
+
+                        ctx.fillStyle = "#0F0";
+                        ctx.font = fontSize + "px san-serif";
+                        ctx.fillText(this.value, this.x, this.y);
+
+
+
+                        this.y += this.speed;
+                        if (this.y > ch)
+                        {
+                            this.y = randomFloat(-100, 0);
+                            this.speed = randomFloat(2, 5);
+                        }
+                        };
+
+                        for (var i = 0; i < maxColums; i++) {
+                        fallingCharArr.push(new Point(i * fontSize, randomFloat(-500, 0)));
+                        }
+
+
+                        var update = function ()
+                        {
+
+                        ctx.fillStyle = "rgba(0,0,0,0.05)";
+                        ctx.fillRect(0, 0, cw, ch);
+
+                        ctx2.clearRect(0, 0, cw, ch);
+
+                        var i = fallingCharArr.length;
+
+                        while (i--) {
+                            fallingCharArr[i].draw(ctx);
+                            var v = fallingCharArr[i];
+                        }
+
+                        requestAnimationFrame(update);
+                        };
+
+                        update();
+                            //# sourceURL=pen.js
+                            </script>
+                          
+        </div>
+
+<!-- footer -->
+        <footer class="card-footer">
+                 <p style="float:right;text-align:centerdisplay: inline-block;line-height:200%;">Aluno <c style="font-size:1.5em;">👨‍💻</c> <a style="color:#000;" target="_blank" href="https://www.facebook.com/tiago.zangerolami"> Tiago José Zangerolami <i class="fa fa-1x fab fa-facebook-square"></i></a><!-- e <a style="color:#000;" target="_blank" href="https://www.facebook.com/people/Rafa-Fragoso/100012343621106">Rafael Fragoso Rodrigues <i class="fa fa-1x fab fa-facebook-square"></i></a>--><br>Disciplina de Introdução à Arquitetura de Computadores, Professora Márcia Fink<br>Curso Superior de Licenciatura em Computação<br><a style="color:#000;" title="Site Iffar SA" target="_blank" href="https://www.iffarroupilha.edu.br/santo-augusto">&nbsp;IFFar&nbsp;<img style="width:1em;" src="images/iffarsa.png"/>&nbsp;Santo Augusto RS</a></p>
+
+                 <p style="float:left;display: inline-block;"><i title="HTML5" class="fa fa-2x fab fa-html5"></i>&nbsp;&nbsp;<i title="CSS3" class="fa fa-2x fab fa-css3"></i>&nbsp;&nbsp;<img title="JavaScript" style="width:25px;" src="images/js.png"/>&nbsp;&nbsp;<a target="_blank" href="https://jquery.com/"><img title="JQuery" style="width:25px;" src="images/jquery.png"/></a>&nbsp;&nbsp;<a title="CSS3" target="_blank" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"><img title="Modelo Bootstrap" style="width:25px;" src="images/bootstrap.png"/></a> <a style="color:#000;" title="Modelo Quiz" target="_blank" href="https://github.com/QuickenLoans/SlickQuiz"><i class="fa fa-2x fab fa-github"></i></a>&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:78px;height:21px"src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a> <a target="_blank" href="https://infinityfree.net/"><img title="Hospedado em infinityfree" style="width:7rem;" src="images/infinityfree.png"/></a><br><a target="_blank" title="fontawesome" href="https://fontawesome.com/"><i class="fa fa-2x fab fa-font-awesome"></i></a> <a target="_blank" href="https://giphy.com/"><img title="Giphy" style=";width:6rem;" src="images/giphy.png"/></a> <a title="Leitor de Texto" target="_blank" href="https://responsivevoice.com/"><img style="width:7em;" src="images/responsivevoice.png"/></a>&nbsp;&nbsp;<a target="_blank" href="https://br.freepik.com/fotos-gratis/bonecas-em-uma-placa-mae-de-computador_999834.htm"><img style="width:6rem;" src="images/freepik.png"/></a><br><n style="font-size:10px;">Utilize navegadores:</n5>&nbsp;&nbsp;<img src="images/brownser_chome2.jpg" border="0" title="Chrome 2x.x ou superior">&nbsp;&nbsp;<img src="images/brownser_fire2.jpg" border="0" title="Firefox 2x.x ou superior">&nbsp;&nbsp;<img src="images/opera.png" border="0" title="Opera"><br><a title="Tiago José Zangerolami" target="_blank" style="color:#000;" href="https://br.linkedin.com/in/tiago-front-end-web"><y style="font-size:10px;vertical-align:middle;">Website&nbsp;<img src="images/responsive.png" border="0" title="Resposive Desing"/>&nbsp;By</y>&nbsp;<img style="width:2rem;border-radius:0.8em;" src="images/tiago.jpeg"/><img style="width:2rem;border-radius:0.8em;" src="images/www.tiago.png"/></a></p>
+           
+        </footer>        
+                                           
+   
+        <script>
+            $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+        });
+        
+        function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+        }
+        </script>
+
+            <div class="smoothscroll-top">
+                <span class="scroll-top-inner">
+                    <i class="fa fa-2x fa-arrow-circle-up"></i>
+                </span>
+            </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src=".js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

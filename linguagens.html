@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta('Content-Type: application/json; charset=utf-8');> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" type="text/css" href="http://mobiletest.me/libs/css/foundation-essentials-5.5.1/css/normalize.302.min.css" media="screen">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen">-->
+        <meta name="author"               content="Desenvolvido por Tiago José Zangerolami, https://br.linkedin.com/in/tiago-front-end-web">
+        <meta name="keywords"             content="conjunto de instrucoes, arquitetura de computadores, instituto federal, iffarroupilha, iff, IFFar SA" />
+        <meta name="rights"               content="Tiago José Zangerolami"/>
+        <meta name="description"          content="Introdução à Arquiteura de Computadores, Conjunto de instruções, Superior em Licenciatura em Computação, IFFar SA" />
+       
+        <!-- Botao Share Facebook -->
+        <meta property="og:url"           content="http://conjuntoinstrucoes.epizy.com/linguagens.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Tiago José Zangerolami" />
+        <meta property="og:description"   content="Superior em Licenciatura em Computação, IFFar SA" />
+        <meta property="og:image"         content="images/conjuntoinstrucoes.jpg" />
+
+        <title>Conjunto de Instruções</title>
+
+        <link href="favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+
+        <!-- SOCIAL ICONS button bootstraps -->
+         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/buttonsocial.css"> 
+        
+        <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Esconde Navbar -->
+        <script type="text/javascript">
+            $(window).scroll(function() {
+             if ($(this).scrollTop()>200)
+              {
+                 $('.navbar').fadeOut();
+              }
+             else
+              {
+                 $('.navbar').fadeIn();
+              }
+            });
+        </script>
+        <!-- END Esconde Navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"></a>
+               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="my-1 mx-2 close">X</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav nav-fill w-100">
+                   
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width:0.8em;" src="images/iffarsa.png"/> IFFar SA</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" title="Portal do Aluno IFF Santo Augusto" href="https://www.iffarroupilha.edu.br/portal-aluno"><img style="width:0.8em;" src="images/iffarsa.png"/> Portal do Aluno</a>
+                             <a class="dropdown-item" target="_blank" title="Sistema Integrado de Gestão de Atividades Acadêmicas" href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"><img style="width:0.8em;" src="images/iffarsa.png"/> Sistema SIGAA</a>
+                             
+                        </div>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-1x fas fa-sitemap"></i> Arquitetura Computadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" target="_blank" href="instrucoes.html"><i class="fa fa-1x fas fa-sitemap"></i> Introdução > Ciclo Instruções</a>
+                            <a class="dropdown-item" target="_blank" href="http://conjuntoinstrucoes.epizy.com/linguagens.html"><i class="fa fa-1x fas fa-sitemap"></i> Linguagens > Conversões</a>
+                          <!--<a class="dropdown-item" target="_blank" href="instrucoes03.html"><i class="fa fa-1x fas fa-sitemap"></i> Conjunto instruções - terceira parte</a>-->
+                            <a class="dropdown-item" target="_blank" href="matrix.html"><i class="fa fa-1x fas fa-laptop"></i> Efeito Matrix 0101010</a>
+                        </div>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="http://conjuntoinstrucoes.epizy.com/?i=1#"><i class="fa fa-1x fas fa-home"></i> Quiz<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">
+                        Arquitetura de Computadores</br>
+                        <p class="display-4";>Conjunto de Instruções</p>
+                    </h1>
+
+                   <!-- \\\\\\\\\\\\\\ BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->
+                            <div style="padding-top:-4px;padding-right: 4px;padding-bottom: 4px;padding-left: 4px;;float:right;background-color: #fff;border-radius:0.8em;">    
+                                <!-- Load Facebook SDK for JavaScript -->
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+
+                                <!-- Your share button code -->
+                                <div class="fb-share-button" 
+                                    data-href="http://conjuntoinstrucoes.epizy.com/linguagens.html" 
+                                    data-layout="button_count">
+                                </div> 
+                            </div>
+                            <!-- \\\\\\\\\\\\\\ END BUTTONS COMPARTILHAR REDES SOCIAIS ////////// -->
+                
+                </div>
+            </div>
+
+            <div class="container">
+            
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-8">    
+  <br>   
+                        <div class="card border-0 copyable">
+                                <ul class="nav nav-tabs copyable">
+                                    <li class="nav-item">
+                                        <button type="button" class="btn btn-outline-primary" href="#tab1" data-toggle="tab">Linguagens <i class="fa fa-1x fas fa-book"></i></button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn btn-outline-primary" href="#tab2" data-toggle="tab">Conversões ⟳</button>
+                                    </li>
+                                </ul>
+                            
+                                <div class="tab-content px-1 pt-3">
+                       
+                                    <div class="tab-pane active" id="tab1">  
+                                                <h2>Linguagem de Alto Nível (programador) > Assembly > Linguagem de Máquina (01100110):</h2> 
+                                                
+                                                <img title="JavaScript" style="width:100%;" src="images/tiposlinguagem.jpg"/> 
+                                                <hr>
+                                                <img title="JavaScript" style="width:100%;" src="images/linguagens.png"/>                                 
+                                    </div>
+                            
+
+                                        <div class="tab-pane" id="tab2"> 
+                                            <h2> Digite ⌨ nos campos abaixo e click para converter ⟳</h2> 
+                                            <div>
+                                            <script type="text/javascript">//<![CDATA[
+                                            function converter() {
+                                            var  output=document.getElementById("ti2");  
+                                            var input=document.getElementById("ti1").value;
+                                                output.value = "";
+                                                for (i=0; i < input.length; i++) {
+                                                output.value +=input[i].charCodeAt(0).toString(2) + " ";
+                                                }
+                                            }
+                                            //]]></script>
+
+                                            <script>
+                                                // tell the embed parent frame the height of the content
+                                                if (window.parent && window.parent.parent){
+                                                window.parent.parent.postMessage(["resultsFrame", {
+                                                    height: document.body.getBoundingClientRect().height,
+                                                    slug: "fA24Y"
+                                                }], "*")
+                                                }
+
+                                                // always overwrite window.name, in case users try to set it manually
+                                                window.name = "result"
+                                            </script>
+                                                    <h3>Texto</h3>
+                                                <form>
+                                                    <input id="ti1" placeholder="Digite um texto" onclick="this.select()">
+                                                    <button type="button" class="btn btn-outline-success btn-sm" onclick="converter();"> Binário</button></br>
+                                                    <input id="ti2" placeholder="Resultado" onclick="this.select()"><button title="Limpar" type="reset" style="background-color: #fff; background-image: none; border-color: transparent;margin:-37px;position:relative;font-size:0.8em;"><i class="fa fa-1x fas fa-eraser"></i></button>
+                                                </form>
+                                                    
+                                        </div>
+
+                                                 <hr>
+                                             
+                                                <div>
+                                                    
+                                                    <h3>Binário</h3> 
+                                                    <form>
+                                                        <input id="bin" type="text" placeholder="Digite binário"onclick="this.select()"><button title="Limpar" type="reset" style="background-color:#fff; background-image: none; border-color: transparent;margin-left:-37px;position:relative;font-size:0.8em;"><i class="fa fa-1x fas fa-eraser"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary" style="position:relative;" onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'dec')"> Decimal</button>
+                                                        <button type="button" class="btn btn-outline-secondary" style="position:relative;" onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'hex')"> Hexadecimal</button><br>
+                                                            <i class="fa fa-1x fas fa-calculator"></i> Resultado:  <span id="binOutput" style="color: #008000" onclick="this.select()">
+                                                    </form>
+                                                </div>
+                                                <hr>
+                                                <div>
+                                                    <h3>Decimal</h3>
+                                                     <form>
+                                                        <input id="dec" placeholder="Digite decimal" onclick="this.select()"><button title="Limpar" type="reset" style="background-color:#fff; background-image: none; border-color: transparent;margin-left:-37px;position:relative;font-size:0.7em;">⌫</button>
+                                                        <button type="button" class="btn btn-outline-success" style="position:relative;" onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'bin')"> Binário</button>
+                                                        <button type="button" class="btn btn-outline-success" style="position:relative;" onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'hex')"> Hexadecimal</button><br />
+                                                        <i class="fa fa-1x fas fa-calculator"></i> Resultado: <span onclick="this.select()" id="decOutput" style="color: #008000">
+                                                     </form>
+                                                </div>
+                                                 <hr>
+                                                <div>
+                                                    <h3>Hexadecimal</h3>
+                                                    <form>
+                                                        <input id="hex" placeholder="Digite hexadecimal" onclick="this.select()"><button title="Limpar" type="reset" style="background-color:#fff; background-image: none; border-color:transparent;margin-left:-37px;position:relative;font-size:0.7em;">⌫</button>
+                                                        <button type="button" class="btn btn-outline-success"  style="position:relative;" onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'bin')"> Binário</button>
+                                                        <button type="button" class="btn btn-outline-success" onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'dec')"> Decim</button><br />
+                                                        <i class="fa fa-1x fas fa-calculator"></i> Resultado: <span id="hexOutput" style="color: #008000" onclick="this.select()">
+                                                    </form>
+                                                </div>
+                                            
+                                        <script type="text/javascript">
+                                            var convert = function(src, output, from, to) {
+                                            switch (from) {
+                                                case "bin": 
+                                                    document.getElementById(output).innerHTML = to === "dec" ? binToDec(src) : binToHex(src); 
+                                                    break;            
+                                                case "dec":
+                                                    document.getElementById(output).innerHTML = to === "bin" ? decToBin(src) : decToHex(src);
+                                                    break;
+                                                case "hex":
+                                                    document.getElementById(output).innerHTML = to === "bin" ? hexToBin(src) : hexToDec(src);
+                                                    break;
+                                            }
+                                        };
+
+                                        var binToDec = function(src) {
+                                            
+                                            var i;
+                                            var n = 0;
+                                            var srcString = src.toString();
+                                            var returnNum = 0;
+                                            
+                                            for (i = srcString.length - 1; i >=0; i--) {
+                                                returnNum += srcString[i] * 2 ** n;
+                                                n++;
+                                            }
+                                            
+                                            return returnNum;
+                                            
+                                        };
+
+                                        var binToHex = function(src) {
+                                            
+                                            var mapping = {
+                                                "0000" : "0",
+                                                "0001" : "1",
+                                                "0010" : "2",
+                                                "0011" : "3",
+                                                "0100" : "4",
+                                                "0101" : "5",
+                                                "0110" : "6",
+                                                "0111" : "7",
+                                                "1000" : "8",
+                                                "1001" : "9",
+                                                "1010" : "A",
+                                                "1011" : "B",
+                                                "1100" : "C",
+                                                "1101" : "D",
+                                                "1110" : "E",
+                                                "1111" : "F"
+                                            };
+                                            
+                                            var i;
+                                            var srcString = src.toString();
+                                            var returnString = "";
+                                            var remainder = "";
+                                            
+                                            for (i = srcString.length; i >= 4; i -= 4) {
+                                                if (i - 4 < srcString.length) {
+                                                    returnString = mapping[srcString.substr(i-4,4)] + returnString;
+                                                }
+                                            }
+                                            
+                                            if (i !== 0) {
+                                                remainder = srcString.substr(0,i);
+                                                
+                                                while (remainder.length < 4) {
+                                                    remainder = "0" + remainder;
+                                                }
+                                                
+                                                returnString = mapping[remainder] + returnString;
+                                            }
+                                            
+                                            return returnString;
+                                            
+                                        };
+
+                                        var decToBin = function(src) {
+                                            
+                                            var n = 0;
+                                            var returnString = "";
+                                            
+                                            while (2 ** (n) < src) {
+                                                n++;
+                                            }
+                                            
+                                            for (n; n>=0; n--) {
+                                                if (2 ** n <= src) {
+                                                    returnString += "1";
+                                                    src = src % 2 ** n;
+                                                } else {
+                                                    returnString += returnString === "" ? "" : "0";
+                                                }
+                                            }
+                                            
+                                            return returnString;
+                                            
+                                        };
+
+                                        var decToHex = function(src) {
+                                            
+                                            var mapping = {
+                                                "0" : "0",
+                                                "1" : "1",
+                                                "2" : "2",
+                                                "3" : "3",
+                                                "4" : "4",
+                                                "5" : "5",
+                                                "6" : "6",
+                                                "7" : "7",
+                                                "8" : "8",
+                                                "9" : "9",
+                                                "10" : "A",
+                                                "11" : "B",
+                                                "12" : "C",
+                                                "13" : "D",
+                                                "14" : "E",
+                                                "15" : "F"
+                                            };
+                                            
+                                            var n = 0;
+                                            var returnString = "";
+                                            
+                                            while (16 ** (n+1) < src) {
+                                                n++;
+                                            }
+                                            
+                                            for (n; n >= 0; n--) {
+                                                if (16 ** n <= src) {
+                                                    returnString += mapping[Math.floor(src / 16 ** n).toString()];
+                                                    src = src - Math.floor(src / 16 ** n) * (16 ** n);
+                                                } else {
+                                                    returnString += "0";
+                                                }
+                                            }
+                                            
+                                            return returnString;
+                                            
+                                        };
+
+                                        var hexToBin = function(src) {
+                                            
+                                            var mapping = {
+                                                "0" : "0000",
+                                                "1" : "0001",
+                                                "2" : "0010",
+                                                "3" : "0011",
+                                                "4" : "0100",
+                                                "5" : "0101",
+                                                "6" : "0110",
+                                                "7" : "0111",
+                                                "8" : "1000",
+                                                "9" : "1001",
+                                                "A" : "1010",
+                                                "B" : "1011",
+                                                "C" : "1100",
+                                                "D" : "1101",
+                                                "E" : "1110",
+                                                "F" : "1111"
+                                            };
+                                            
+                                            var srcString = src.toString();
+                                            var i;
+                                            var returnString = "";
+                                            
+                                            for (i = 0; i < srcString.length; i++) {
+                                                returnString += mapping[srcString[i]];
+                                            }
+                                            
+                                            return returnString;
+                                            
+                                        };
+
+                                        var hexToDec = function(src) {
+                                            
+                                            var mapping = {
+                                                "0" : "0",
+                                                "1" : "1",
+                                                "2" : "2",
+                                                "3" : "3",
+                                                "4" : "4",
+                                                "5" : "5",
+                                                "6" : "6",
+                                                "7" : "7",
+                                                "8" : "8",
+                                                "9" : "9",
+                                                "A" : "10",
+                                                "B" : "11",
+                                                "C" : "12",
+                                                "D" : "13",
+                                                "E" : "14",
+                                                "F" : "15"
+                                            };
+                                            
+                                            var srcString = src.toString();
+                                            var returnNum = 0;
+                                            var i;
+                                            
+                                            for (i = 0; i < srcString.length; i++) {
+                                                returnNum += mapping[srcString[i]] * (16 ** (srcString.length -1 - i));
+                                            }
+                                            
+                                            return returnNum;
+                                            
+                                        };
+                                        </script>
+                                        <hr>
+                                        <br>
+                                        <p>Referências:</p> 
+                                        <p><a target="_blank" href="https://github.com/rickymerrefield/javascript_bit_converter/blob/master/bit_converter.js">https://github.com/rickymerrefield/javascript_bit_converter/blob/master/bit_converter.js</a></p>
+                                                        <p><a target="_blank" href="https://codebeautify.org/binary-hex-converter">https://codebeautify.org/binary-hex-converter</a></p>
+                                                       <p><a target="_blank" href="https://yiqu.github.io/binit/">https://yiqu.github.io/binit/</a></p>
+                                                       <p><a target="_blank" href="http://www.unit-conversion.info/texttools/category/Converters#data"> http://www.unit-conversion.info/texttools/category/Converters#data</a></p>
+
+                                        </div>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4">       
+                     
+                         <style>
+                            .caixavideo {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 0;
+                                    padding-bottom: 56.25%;
+                                    
+                                }
+                                .video {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 0.8rem;
+                                }
+                        </style>    
+                                <h2 class="card-header" style="text-align:center;">Vídeo <i class="fa fa-2x fab fa-youtube" style="vertical-align: sub;"></i><a target="_blank" href="https://www.echalk.co.uk"> eChalk.co.uk</a></h2> 
+                               
+                                <h3>Quer saber como um computador executa um programa?</h3>
+                                         <div class="caixavideo">
+                                            <iframe class="video" src="https://www.youtube.com/embed/FRCXF1Sak7s?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                                        </div>
+                            <h5> Se você realmente quer entender o que acontece quando um programa é executado, este é o lugar ideal para começar. Esta simulação fantástica fornece um modelo conceitual simples do funcionamento interno de um computador.</h5>
+                            <h5> Seu desafio é construir um programa curto para resolver um problema simples e, ao fazer isso, você descobrirá a relação entre os registradores, RAM, barramento do sistema e conjunto de instruções.</h5>
+                            <h5> Versão apenas para demostração.</h5>
+                             <a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";><img style="width:100%;" src="images/echalk.png"/></a>
+                             <h5><a target="_blank" href="https://www.echalk.co.uk/ComputerScience/ComputerSystems/SystemArchitecture/instructionsGame/programExecution.html";>www.eChalk.co.uk</a></h5>
+                                    
+
+                    </div>
+                </div>
+                
+            </div>
+            <!-- fim container -->
+        </main>
+ <br>
+  
+
+  <!-- footer -->
+        <footer class="card-footer">
+                 <p style="float:right;text-align:centerdisplay: inline-block;line-height:200%;">Alunos <c style="font-size:1.5em;">👨‍💻</c> <a style="color:#000;" target="_blank" href="https://www.facebook.com/tiago.zangerolami"> Tiago José Zangerolami <i class="fa fa-1x fab fa-facebook-square"></i></a><!-- e <a style="color:#000;" target="_blank" href="https://www.facebook.com/people/Rafa-Fragoso/100012343621106">Rafael Fragoso Rodrigues <i class="fa fa-1x fab fa-facebook-square"></i></a>--><br>Disciplina de Introdução à Arquitetura de Computadores, Professora Márcia Fink<br>Curso Superior de Licenciatura em Computação<br><a style="color:#000;" title="Site Iffar SA" target="_blank" href="https://www.iffarroupilha.edu.br/santo-augusto">&nbsp;IFFar&nbsp;<img style="width:1em;" src="images/iffarsa.png"/>&nbsp;Santo Augusto RS</a></p> 
+
+                 <p style="float:left;display: inline-block;"><i title="HTML5" class="fa fa-2x fab fa-html5"></i>&nbsp;&nbsp;<i title="CSS3" class="fa fa-2x fab fa-css3"></i>&nbsp;&nbsp;<img title="JavaScript" style="width:25px;" src="images/js.png"/>&nbsp;&nbsp;<a target="_blank" href="https://jquery.com/"><img title="JQuery" style="width:25px;" src="images/jquery.png"/></a>&nbsp;&nbsp;<a title="CSS3" target="_blank" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/"><img title="Modelo Bootstrap" style="width:25px;" src="images/bootstrap.png"/></a> <a style="color:#000;" title="Modelo Quiz" target="_blank" href="https://github.com/QuickenLoans/SlickQuiz"><i class="fa fa-2x fab fa-github"></i></a>&nbsp;&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:78px;height:21px"src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a> <a target="_blank" href="https://infinityfree.net/"><img title="Hospedado em infinityfree" style="width:7rem;" src="images/infinityfree.png"/></a><br><a target="_blank" title="fontawesome" href="https://fontawesome.com/"><i class="fa fa-2x fab fa-font-awesome"></i></a> <a target="_blank" href="https://giphy.com/"><img title="Giphy" style=";width:6rem;" src="images/giphy.png"/></a> <a title="Leitor de Texto" target="_blank" href="https://responsivevoice.com/"><img style="width:7em;" src="images/responsivevoice.png"/></a>&nbsp;&nbsp;<a target="_blank" href="https://br.freepik.com/fotos-gratis/bonecas-em-uma-placa-mae-de-computador_999834.htm"><img style="width:6rem;" src="images/freepik.png"/></a><br><n style="font-size:10px;">Utilize navegadores:</n5>&nbsp;&nbsp;<img src="images/brownser_chome2.jpg" border="0" title="Chrome 2x.x ou superior">&nbsp;&nbsp;<img src="images/brownser_fire2.jpg" border="0" title="Firefox 2x.x ou superior">&nbsp;&nbsp;<img src="images/opera.png" border="0" title="Opera"><br><a title="Tiago José Zangerolami" target="_blank" style="color:#000;" href="https://br.linkedin.com/in/tiago-front-end-web"><y style="font-size:10px;vertical-align:middle;">Website&nbsp;<img src="images/responsive.png" border="0" title="Resposive Desing"/>&nbsp;By</y>&nbsp;<img style="width:2rem;border-radius:0.8em;" src="images/tiago.jpeg"/><img style="width:2rem;border-radius:0.8em;" src="images/www.tiago.png"/></a></p>
+           
+        </footer>       
+
+        
+        <!-- rolar para cima -->
+        <script type="text/javascript">
+            $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+            });
+            
+            function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+            }
+        </script>
+        <div class="smoothscroll-top">
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span>
+        </div>
+        <!-- fim rolar para cima -->
+
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery  document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+       
+        <script src=".js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- QUIZ -->
+        <script src="quiz/js/jquery.js"></script>
+        <script src="quiz/js/slickQuiz-config.js"></script>
+        <script src="quiz/js/slickQuiz.js"></script>
+        <script src="quiz/js/master.js"></script>
+       
+    </body>
+</html>
